@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { ChartComponent } from './barchart/chart.component';
 import { AppRoutingModule } from './/app-routing.module';
 import {ChartsModule} from 'ng2-charts';
+import { ChartchildComponent } from './chartchild/chartchild.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChartComponent
+    ChartComponent,
+    ChartchildComponent
   ],
   imports: [
     BrowserModule,

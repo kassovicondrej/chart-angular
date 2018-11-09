@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { BaseChartDirective } from 'ng2-charts';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-chart',
@@ -36,13 +37,15 @@ export class ChartComponent {
     }
   };
 
+  constructor(private router: Router) {}
+
   public chartHovered(e: any): void {
     console.log(e);
   }
 
   public chartClicked(e: any): void {
     console.log(e);
-    // console.log('Adam je super projektak a grafy su este viac supernejsie');
+      this.router.navigateByUrl('/chartchild');
   }
 
   public onSort() {
