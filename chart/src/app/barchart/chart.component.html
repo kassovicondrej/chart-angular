@@ -1,0 +1,25 @@
+<div class="container">
+  <h3 class="fungujeCSS">
+    Unicorn
+  </h3>
+
+  <section class="mt-4" data-test-id="category-list">
+    <header class="bg-white box-shadow-sm p-2 fs-2 position-relative border-top-on d-flex align-items-center w-100">
+      <h3 class="fs-2 m-0 font-weight-normal">Vsetky rezorty</h3>
+    </header>
+
+    <!-- Section content -->
+    <div class="bg-white box-shadow-sm p-2">
+      <div>
+        <div style="display: block">
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+                  [legend]="barChartLegend"
+                  [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+        <!-- <button (click)="randomize()">Update</button> -->
+        <!-- <button (click)="sort()">Sort</button> -->
+      </div>
+    </div>
+  </section>
+</div>
