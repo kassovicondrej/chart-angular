@@ -9,13 +9,17 @@
     </header>
 
     <!-- Section content -->
-    <div class="bg-white box-shadow-sm p-2">
+    <div class="box-shadow-sm p-2 backgroun">
       <div>
         <div style="display: block">
-          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
-                  [legend]="barChartLegend"
-                  [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"
-                  (chartClick)="chartClicked($event)"></canvas>
+          <canvas id="myChart" baseChart [datasets]="barChartData"
+           [labels]="barChartLabels"
+            [options]="barChartOptions"
+           [legend]="barChartLegend"
+            [chartType]="barChartType" 
+            (chartHover)="chartHovered($event)" 
+            (chartClick)="chartClicked($event)" 
+            [colors]="colors"></canvas>
         </div>
         <!-- <button (click)="randomize()">Update</button> -->
         <button (click)="onSort()">Sortuj podla uspesnosti</button>

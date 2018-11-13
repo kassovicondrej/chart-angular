@@ -11,7 +11,7 @@ import { ChartchildComponent } from './chartchild/chartchild.component';
   declarations: [
     AppComponent,
     ChartComponent,
-    ChartchildComponent
+    ChartchildComponent,
   ],
   imports: [
     BrowserModule,

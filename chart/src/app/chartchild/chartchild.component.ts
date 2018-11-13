@@ -39,6 +39,7 @@ export class ChartchildComponent {
 
   public barChartOptions: any = {
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       xAxes: [{
         stacked: true
