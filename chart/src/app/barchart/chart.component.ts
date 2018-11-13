@@ -23,7 +23,7 @@ export class ChartComponent implements OnInit {
     { data: [20, 23, 21, 26, 22, 1, 17, 26, 27, 29, 14, 15, 22, 27], label: 'Ostatne', stack: '1', backgroundColor: '#fff' }
   ];
 
-  public barChartLabels: string[] = ['ked je dlhsi-->pica', 'MF', 'MH', 'MK', 'MO', 'b', 'c', 'MS', 'd', 'MV', 'e', 'MZ', 'MZP'];
+  public barChartLabels: string[] = ['LM', 'MF', 'MH', 'MK', 'MO', 'b', 'c', 'MS', 'd', 'MV', 'e', 'MZ', 'MZP'];
 
   public barChartOptions: any = {
     responsive: true,
